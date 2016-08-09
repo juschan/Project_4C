@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160808121340) do
   create_table "rentals", force: :cascade do |t|
     t.string   "name"
     t.text     "address"
-    t.string   "type"
+    t.string   "property_type"
     t.string   "tenure"
     t.string   "size"
     t.string   "psf"
@@ -26,11 +26,11 @@ ActiveRecord::Schema.define(version: 20160808121340) do
     t.string   "price"
     t.string   "beds"
     t.string   "baths"
-    t.string   "funishing"
+    t.string   "furnishing"
     t.string   "floor_level"
     t.string   "agent"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end

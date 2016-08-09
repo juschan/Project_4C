@@ -3,7 +3,7 @@ class CreateRentals < ActiveRecord::Migration[5.0]
     create_table :rentals do |t|
       t.string :name
       t.text :address
-      t.string :type
+      t.string :property_type
       t.string :tenure
       t.string :size
       t.string :psf
@@ -11,7 +11,7 @@ class CreateRentals < ActiveRecord::Migration[5.0]
       t.string :price
       t.string :beds
       t.string :baths
-      t.string :funishing
+      t.string :furnishing
       t.string :floor_level
       t.string :agent
 
