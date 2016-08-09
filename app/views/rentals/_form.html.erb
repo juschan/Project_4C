@@ -1,0 +1,82 @@
+<%= form_for(rental) do |f| %>
+  <% if rental.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rental.errors.count, "error") %> prohibited this rental from being saved:</h2>
+
+      <ul>
+      <% rental.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_area :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :type %>
+    <%= f.text_field :type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tenure %>
+    <%= f.text_field :tenure %>
+  </div>
+
+  <div class="field">
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+  </div>
+
+  <div class="field">
+    <%= f.label :psf %>
+    <%= f.text_field :psf %>
+  </div>
+
+  <div class="field">
+    <%= f.label :listingID %>
+    <%= f.number_field :listingID %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= f.label :beds %>
+    <%= f.text_field :beds %>
+  </div>
+
+  <div class="field">
+    <%= f.label :baths %>
+    <%= f.text_field :baths %>
+  </div>
+
+  <div class="field">
+    <%= f.label :funishing %>
+    <%= f.text_field :funishing %>
+  </div>
+
+  <div class="field">
+    <%= f.label :floor_level %>
+    <%= f.text_field :floor_level %>
+  </div>
+
+  <div class="field">
+    <%= f.label :agent %>
+    <%= f.text_field :agent %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+json.extract! rental, :id, :name, :address, :type, :tenure, :size, :psf, :listingID, :price, :beds, :baths, :funishing, :floor_level, :agent, :created_at, :updated_at
+json.url rental_url(rental, format: :json)
